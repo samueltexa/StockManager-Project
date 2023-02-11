@@ -1,2 +1,2 @@
 # StockManager
-Stock Management in PHP, HTML, AND JAVASCRIPT
+Stock Management in PHP, HTML, And JavaScript
