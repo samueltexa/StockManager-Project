@@ -1,0 +1,67 @@
+input[type="text"]{
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+}
+input[type="Password"]{
+  width: 79%;
+  display: inline;
+  box-sizing: border-box;
+}
+input[type="submit"]{
+  display: inline;
+  box-sizing: border-box;
+}
+.labels{
+  display: block;
+  box-sizing: border-box;
+}
+.btnlogin{
+  background-color: blue;
+  color: white;
+  border: non;
+}
+.canva{
+  border: 2px solid black;
+  margin-bottom: 3%;
+  box-sizing: border-box;
+}
+form{
+  background-color: white;
+  margin-top: 5%;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  box-sizing: border-box;
+}
+body{
+  background-color: white;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.reg{
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  padding-bottom: 10%;
+  box-sizing: border-box;
+}
+.account-display{
+  display: flex;
+  margin-bottom: 5%;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.line{
+  display: flex;
+  margin-bottom: 10%;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+@viewport{
+  width: device-width;
+  zoom: 1;
+}
