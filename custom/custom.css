@@ -26,7 +26,7 @@ input[type="submit"]{
   margin-bottom: 3%;
   box-sizing: border-box;
 }
-form{
+.login_Form{
   background-color: white;
   margin-top: 5%;
   padding-bottom: 5%;
@@ -64,4 +64,41 @@ body{
 @viewport{
   width: device-width;
   zoom: 1;
+}
+.register-display{
+  display: flex;
+  padding-bottom: 10%;
+  box-sizing: border-box;
+}
+#password-1{
+  width: 100%;
+  display: inline;
+  box-sizing: border-box;
+  box-sizing: border-box;
+}
+.alreadyHave_Account{
+  margin-left: 15%;
+  margin-bottom: 10%;
+  margin: : 10%;
+  box-sizing: border-box;
+}
+#register-1{
+  background-color: blue;
+  color: white;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 100%;
+}
+.link{
+  color: red;
+  display: flex;
+  justify-content: center;
+  margin-left: 35%;
+  margin-right: 35%;
+
+}
+.canvas{
+  border: 2px solid black;
+  margin-bottom: 3%;
+  box-sizing: border-box;
 }
