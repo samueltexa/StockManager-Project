@@ -2,6 +2,7 @@ input[type="text"]{
   width: 100%;
   display: block;
   box-sizing: border-box;
+  margin-bottom: 5%;
 }
 input[type="Password"]{
   width: 79%;
@@ -26,13 +27,13 @@ input[type="submit"]{
   margin-bottom: 3%;
   box-sizing: border-box;
 }
-.login_Form{
+.Forms{
   background-color: white;
   margin-top: 5%;
   padding-bottom: 5%;
   padding-top: 5%;
   padding-left: 5%;
-  padding-right: 5%;
+  padding-right: 10%;
   box-sizing: border-box;
 }
 body{
@@ -40,13 +41,6 @@ body{
   display: flex;
   align-self: center;
   justify-content: center;
-  box-sizing: border-box;
-}
-.reg{
-  display: flex;
-  justify-content: center;
-  font-weight: bold;
-  padding-bottom: 10%;
   box-sizing: border-box;
 }
 .account-display{
@@ -66,9 +60,12 @@ body{
   zoom: 1;
 }
 .register-display{
+  background-color: cyan;
+  color: white;
   display: flex;
-  padding-bottom: 10%;
   box-sizing: border-box;
+  margin-bottom: 20%;
+  padding-left: 10%;
 }
 #password-1{
   width: 100%;
@@ -95,10 +92,18 @@ body{
   justify-content: center;
   margin-left: 35%;
   margin-right: 35%;
-
 }
 .canvas{
   border: 2px solid black;
   margin-bottom: 3%;
   box-sizing: border-box;
+}
+.noaccount{
+  text-align: center;
+  margin-bottom: 5%;
+}
+#Position{
+  display: block;
+  width: 100%;
+  margin-bottom: 5%
 }
