@@ -16,6 +16,7 @@ input[type="submit"]{
 .labels{
   display: block;
   box-sizing: border-box;
+  color: white;
 }
 .btnlogin{
   background-color: blue;
@@ -28,7 +29,7 @@ input[type="submit"]{
   box-sizing: border-box;
 }
 .Forms{
-  background-color: white;
+  background-color: cyan;
   margin-top: 5%;
   padding-bottom: 5%;
   padding-top: 5%;
@@ -37,22 +38,17 @@ input[type="submit"]{
   box-sizing: border-box;
 }
 body{
-  background-color: white;
+  background-color: cyan;
   display: flex;
   align-self: center;
   justify-content: center;
   box-sizing: border-box;
 }
-.account-display{
+.account_display{
+  color: blue;
   display: flex;
   margin-bottom: 5%;
   justify-content: center;
-  box-sizing: border-box;
-}
-.line{
-  display: flex;
-  margin-bottom: 10%;
-  border: 1px solid black;
   box-sizing: border-box;
 }
 @viewport{
@@ -60,7 +56,6 @@ body{
   zoom: 1;
 }
 .register-display{
-  background-color: cyan;
   color: white;
   display: flex;
   box-sizing: border-box;
@@ -70,6 +65,7 @@ body{
 #password-1{
   width: 100%;
   display: inline;
+  margin-bottom: 5%;
   box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -102,8 +98,23 @@ body{
   text-align: center;
   margin-bottom: 5%;
 }
-#Position{
+#District{
   display: block;
   width: 100%;
   margin-bottom: 5%
+}
+input[type="email"]{
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 5%;
+}
+.registrationsuccess{
+  background-color: blue;
+  color: red;
+  align-items: center;
+}
+.do{
+  background-color: red;
+  color: blue;
 }
