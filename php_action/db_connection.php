@@ -3,7 +3,7 @@ session_start();
 $host = "localhost";
 $username = "root";
 $password = "";
-$dbname ="websiteproject";
+$dbname ="stockmanager";
 $conn = new mysqli($host, $username, $password,$dbname);
 // Check connection
   if ($conn->connect_error) {

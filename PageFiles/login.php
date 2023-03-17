@@ -2,7 +2,6 @@
 <html>
 	<head>
 			<title>StockManager</title>
-			<meta charset="UTF-8">
 			<link rel="stylesheet" href="../custom/custom.css">
 			<script src="./custom/custom.js"></script>
 			</head>
@@ -26,7 +25,7 @@
 		</div>
 				<p>Forgot<span><a href="forgotPassword">password? </a></span></p>
 				<div class="noaccount">Don't have an acount?</div>
-				<a class="link" href="register">Register</a>
+				<a class="link" href="registration">Register</a>
 	</form>
 	</body>
 <html>

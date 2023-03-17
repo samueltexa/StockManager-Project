@@ -109,12 +109,6 @@ input[type="email"]{
   box-sizing: border-box;
   margin-bottom: 5%;
 }
-.registrationsuccess{
-  background-color: blue;
-  color: red;
-  align-items: center;
-}
 .do{
-  background-color: red;
-  color: blue;
+  
 }
