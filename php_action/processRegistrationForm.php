@@ -1,12 +1,12 @@
 <?php
-include "../php_action/db_connection.php";
-  $username =$_POST['username'];
-  $email =$_POST['email'];
-  $district =$_POST['District'];
-  $password =$_POST['password'];
+include "db_connection.php";
+  $username = $_POST['username'];
+  $email = $_POST['email'];
+  $district = $_POST['District'];
+  $password = $_POST['password'];
 
 
-// $errors = array();
+//$errors = array();
 //   if(strlen($_POST["password"])<5){
 //     //stop the script with a suitable message name is required
 //     $errors['u'] = "Password should be at least 6 characters"
@@ -32,7 +32,7 @@ include "../php_action/db_connection.php";
      $stmt = $conn->prepare("INSERT INTO login(UserName, Password) VALUES(?, ?)");
      $stmt->bind_param("ss",$username, $password);
      $stmt->execute();
-     header("location:registrationsuccess.php");
+     header("location:../PageFiles/registrationsuccess.php");
      $stmt->close();
      $conn->close();
    }

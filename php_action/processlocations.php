@@ -1,5 +1,5 @@
 <?php
-require "../php_action/db_connection.php";
+require "db_connection.php";
 //require_once "../php_action/db_connection.php";
 //include "../php_action/db_connection.php";
 

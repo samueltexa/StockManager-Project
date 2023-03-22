@@ -2,7 +2,7 @@
 <html>
 	<head>
 			<title>StockManager</title>
-			<link rel="stylesheet" href="../custom/custom.css">
+			<link rel="stylesheet" href="../custom/css/custom.css">
 			<script src="./custom/custom.js"></script>
 			</head>
 	<body>
@@ -15,8 +15,8 @@
       		<canvas class="canva" width="250" height="200"></canvas>
     </div>
 		<div>
-				<label>Email</label>
-				<input type="email" placeholder="Enter your email" name="Email" required>
+				<label>User name</label>
+				<input type="text" placeholder="Enter your user name" name="username" required>
 		</div>
 		<div>
 				<label class="labels">Password</label>

@@ -2,14 +2,14 @@
 <html>
   <head>
     <title>Register</title>
-    <link rel="stylesheet" href="../custom/custom.css">
-    <!-- <script src="../custom/custom.js" defer></script> -->
+    <link rel="stylesheet" href="../custom/css/custom.css">
+    <script src="../custom/js/custom.js" defer></script>
   </head>
   <body>
     <meta name="viewport"
     content="=width=device-width,
     initial-scale=1.0">
-    <form class="Forms" method="POST" action="processRegistrationForm.php">
+    <form class="Forms" method="POST" action="../php_action/processRegistrationForm.php">
       <div class="register-display">RGISTER FOR AN ACCOUNT</div>
       <div>
         <label for="username">User Name:</label>
