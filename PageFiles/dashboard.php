@@ -24,31 +24,30 @@ $connect->close();
     </head>
     <body>
     	<div class="navigbar">
+			<div id="com">
     		  <a href="product.php">TOTAL PRODUCTS
-    				 <span><?php echo $countProduct; ?></span>
-    			</a>
-    			<a href="orders.php?o=manord">TOTAL ORDERS
-    					<span><?php echo $countOrder; ?></span>
-    			</a>
+    		  <span><?php echo $countProduct; ?></span></a>
+		</div>
+    		<a href="orders.php?o=manord">TOTAL ORDERS
+    		<span><?php echo $countOrder; ?></span></a>
     			<a href="product.php">LOW STOCK
-    				<span><?php echo $countLowStock; ?></span>
-    			</a>
+    			<span><?php echo $countLowStock; ?></span></a>
     	</div>
-    	<div>
+    	<div class="date">
     		  <h1><?php echo date('d'); ?></h1>
     	</div>
-    	<div>
+    	<div class="days">
     		   <p><?php echo date('l') .' '.date('d').', '.date('Y'); ?></p>
     	</div>
-    	<div>
+    	<div class="Revenue">
     		  <h1><?php if($totalRevenue) {
     		   echo $totalRevenue;
     		    	}else {
     		    	echo '0';
     		    	} ?></h1>
     	</div>
-    	<div>
-    		  <p>Total Revenue</p>
+    	<div class="totalRevenue">
+    		  <p>$ Total Revenue</p>
     	 </div>
    </body>
 </html>

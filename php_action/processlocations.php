@@ -5,7 +5,7 @@ require "db_connection.php";
 
   // query for selecting cities from the database
 $query = "SELECT * FROM location;";
-$rs = $conn->query($query);
+$rs = $connect->query($query);
 foreach($rs as $result){
 echo "<option value=".$result["Locations"].">".$result["Locations"]."</option>";
 }

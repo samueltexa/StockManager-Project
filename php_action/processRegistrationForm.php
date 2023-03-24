@@ -24,17 +24,17 @@ include "db_connection.php";
 //     die("Passwords don't match");
 //   }
 
-  $stmt = $conn->prepare("INSERT INTO users(UserName, Email, Address) VALUES(?, ?, ?)");
+  $stmt = $connect->prepare("INSERT INTO users(UserName, Email, Address) VALUES(?, ?, ?)");
   $stmt->bind_param("sss", $username, $email, $district);
   $success = $stmt->execute();
    if($success == 1){
      echo "Registration successful";
-     $stmt = $conn->prepare("INSERT INTO login(UserName, Password) VALUES(?, ?)");
+     $stmt = $connect->prepare("INSERT INTO login(UserName, Password) VALUES(?, ?)");
      $stmt->bind_param("ss",$username, $password);
      $stmt->execute();
      header("location:../PageFiles/registrationsuccess.php");
      $stmt->close();
-     $conn->close();
+     $connect->close();
    }
    else{
        echo "<script> confirm('User name already taken')</script>";

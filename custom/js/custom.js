@@ -6,3 +6,4 @@ function myFunction() {
   } else {
     x.className = "header";
   }
+}
