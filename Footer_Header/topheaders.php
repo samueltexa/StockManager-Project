@@ -9,9 +9,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-	<div class="header" id="myheader">
-      	<a href="dashboard.php" class="active">DASHBOARD</a>
-        <a href="brand.php">BRAND</a></li>
+	<div class="header">
+	<a href="dashboard.php">DASHBOARD</a>
+        <a href="brand.php">BRAND</a>
         <a href="categories.php">CATEGORY</a>
         <a href="product.php">PRODUCT</a>
 		<a href="report.php">REPORT</a>
@@ -33,8 +33,15 @@
         		<a href="logout.php">LOGOUT</a>
 			</div>
 		</div>
-         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-         <i class="fa fa-bars"></i></a>
+		<div class="drop">
+      <button class="data"><i class="fa fa-bars"></i></button>
+      <div class="cont">
+	  <a href="brand.php">BRAND</a>
+        <a href="categories.php">CATEGORY</a>
+        <a href="product.php">PRODUCT</a>
+		<a href="report.php">REPORT</a>
+    </div>
+    </div>
 	 </div>
 	</body>
 </html>

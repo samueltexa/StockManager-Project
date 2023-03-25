@@ -20,17 +20,16 @@ border-radius: 10px;
 }
 .navigbar a:hover {
   background-color: rgb(63, 110, 110);
-  color: white;
 }
-/* Navbar container */
+/* header container */
 .header{
 overflow: hidden;
-background-color: #802626;
+background-color: #0b3123;
 font-family: Arial;
 margin: 1%;
 border-radius: 10px;
 }
-/* Links inside the header */
+/*Links inside the header */
 .header a {
   float: left;
   color: white;
@@ -39,70 +38,77 @@ border-radius: 10px;
   text-decoration: none;
   font-size: 15px;
 }
-.header a:hover {
-  background-color: cyan;
-  color: white;
-}
 /* The dropdown container */
 .dropdown {
   float: left;
-  overflow: hidden;
 }
 /* Dropdown button */
 .dropdown .dropbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
+  overflow: hidden;
   color: white;
   padding: 14px 16px;
+  border: none;
   background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
+  font-family: inherit;
+  font-size: inherit;
 }
-/* Adding background color to navbar links on hover */
-.header a:hover, .dropdown:hover .dropbtn {
-  background-color: cyan;
+/* Adding background color to navigbar and header, and dropdown-content links on hover */
+.header a:hover, .dropdown-content a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(63, 110, 110);
 }
 /* Dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
+  background-color:  #0b3123;
+  min-width: 100px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 /* Links inside the dropdown */
 .dropdown-content a {
   float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
+  color: white;
+  padding: 10px 16px;
   display: block;
-  text-align: left;
-}
-/* Adding background color to dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #ddd;
+  text-align: center;
+  font-size: 13px;
 }
 /* Showing the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
-.header a.active {
-  background-color: #17362b;
-  color: white;
-}
-/* Hidding the link that should open and close the topnav on small screens */
-.header .icon {
+/* dropdown icon */
+.drop{
+  float: right;
+  background-color: inherit;
+  width: 100px;
+  margin-top: 10px;
   display: none;
 }
+.drop .data{
+  overflow: hidden;
+  color: white;
+  background-color: rgb(123, 123, 150);
+}
+/* data in the drop down icon */
+.cont{
+  display: none;
+}
+/* links in the drop down icon */
+.cont a{
+  display: block;
+  color: white;
+}
+.drop:hover .cont{
+  display: block;
+}
+
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
-  .header a:not(:first-child) {display: none;}
-  .header a.icon {
-    float: right;
-    display: block;
+  .header a:not(:first-child):not(:last-child) {display: none;}
+  .header .drop {
+  display: block;
   }
 }
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
@@ -258,26 +264,13 @@ table th:nth-child(2) {
 ::-webkit-scrollbar-track {
   background-color: white; /* Color of the track (background of scrollbar) */
 }
-.search{
-  width: 10%;
-  display: inline;
-  float: right;
-  border-radius: 5px;
+.available {
+  color: green;
 }
-/* Style the search button */
-button#searchBtn {
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  cursor: pointer;
-  float: right;
+
+.unavailable {
+  color: red;
 }
-button#searchBtn:hover {
-  background-color: #45a049;
-}
-/* Style the search icon */
-.fa-search {
-  font-size: 20px;
-}
+
 
 

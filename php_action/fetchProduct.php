@@ -1,19 +1,14 @@
 <?php
 require "db_connection.php";
-$searchTerm = isset($_POST['search']) ? $_POST['search'] : '';
 $sql = "SELECT product.product_id, product.product_name, product.product_image, product.brand_id,
-        product.categories_id, product.quantity, product.rate, product.active, product.status,
-        brands.brand_name, categories.categories_name FROM product
-        INNER JOIN brands ON product.brand_id = brands.brand_id
-        INNER JOIN categories ON product.categories_id = categories.categories_id ";
-if (!empty($searchTerm)) {
-    $sql .= "WHERE product.status = 1 AND (product.product_name LIKE '%$searchTerm%' OR brands.brand_name LIKE '%$searchTerm%' OR categories.categories_name LIKE '%$searchTerm%')";
-} else {
-    $sql .= "WHERE product.status = 1";
-}
+ 		product.categories_id, product.quantity, product.rate, product.active, product.status,
+ 		brands.brand_name, categories.categories_name FROM product
+		INNER JOIN brands ON product.brand_id = brands.brand_id
+		INNER JOIN categories ON product.categories_id = categories.categories_id
+		WHERE product.status = 1";
 $result = $connect->query($sql);
 if ($result->num_rows > 0) {
-    echo "<table id='search-results'>";
+    echo "<table>";
     echo "<tr>";
     echo "<th>Product Image</th>";
     echo "<th>Product Name</th>";
@@ -32,7 +27,7 @@ if ($result->num_rows > 0) {
                 $brand = $row[9];
                 $category = $row[10];
                 $status = $row[8];
-                
+                $class = $status == 1 ? "available" : "unavailable";
                 // echo the table row
                 echo "<tr>";
                 echo "<td><img src='" . $productImage . "' alt='image cannot be displayed" . $product_name . "' style='width:100px;height:100px;'></td>";
@@ -41,12 +36,11 @@ if ($result->num_rows > 0) {
                 echo "<td>" . $quantity . "</td>";
                 echo "<td>" . $brand . "</td>";
                 echo "<td>" . $category . "</td>";
-                echo "<td>" . $status . "</td>";
+                echo "<td class='" . $class . "'>" . ($status == 1 ? "Available" : "Unavailable") . "</td>";
                 echo "</tr>";
             }
     echo "</table>";
 } else {
-    echo "No results found.";
+    echo "Query failed";
 }
 $connect->close();
-?>
