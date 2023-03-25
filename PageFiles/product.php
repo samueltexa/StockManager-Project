@@ -29,15 +29,15 @@
 			</div>
 	        <div class="form-group">
 	        	<label for="productName" >Product Name: </label>
-				<input type="text" placeholder="Product Name" name="productName" autocomplete="off">
+				<input type="text" placeholder="Product Name" name="productName" autocomplete="off" required>
 	        </div>
 	        <div class="form-group">
 	        	<label for="quantity">Quantity: </label>
-				<input type="text"  placeholder="Quantity" name="quantity" autocomplete="off">
+				<input type="text"  placeholder="Quantity" name="quantity" autocomplete="off" required>
 	        </div>
 	        <div class="form-group">
 	        	<label for="rate">Rate: </label>
-				<input type="text" placeholder="Rate" name="rate" autocomplete="off">
+				<input type="text" placeholder="Rate" name="rate" autocomplete="off" required>
 			</div>
 	        <div class="form-group">
 	        	<label for="brandName">Brand Name: </label>

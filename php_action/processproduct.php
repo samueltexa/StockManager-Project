@@ -2,13 +2,14 @@
 include "db_connection.php";
 $valid['success'] = array('success' => false, 'messages' => array());
 if($_POST) {	
-	$productName 		= $_POST['productName'];
+	$productName = $_POST['productName'];
   // $productImage 	= $_POST['productImage'];
-  $quantity 			= $_POST['quantity'];
-  $rate 					= $_POST['rate'];
-  $brandName 			= $_POST['brandName'];
-  $categoryName 	= $_POST['categoryName'];
-  $productStatus 	= $_POST['productStatus'];
+  $quantity = $_POST['quantity'];
+  $rate = $_POST['rate'];
+  $brandName = $_POST['brandName'];
+  $categoryName = $_POST['categoryName'];
+  $productStatus = $_POST['productStatus'];
+  $status = ($productStatus == 'Available') ? 1 : 0;
 	$type = explode('.', $_FILES['productImage']['name']);
 	$type = $type[count($type)-1];		
 	$url = '../images/stock/'.uniqid(rand()).'.'.$type;
@@ -33,4 +34,3 @@ if($_POST) {
 	$connect->close();
 }
 // print_r($_POST);
-?>
