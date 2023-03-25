@@ -7,15 +7,12 @@
 </head>
 <body>
 	<div class="home">
-		  <a class="homelink"href="dashboard.php">Home /</a>
-		  <hi class="homelink">Product</hi>
+		  <a class="homelink"href="dashboard.php">Home</a>
+		  <hi class="homelink">/ Product</hi>
 	</div>
 	<div class = "manageproduct">
-		<img class="icon"src="../images/icons/manageproduct.png"></img>
-		<div class="manage">Manage Products</div>
-	</div>
-	<div>
-		<button class="open-button" onclick="openForm()">Add Products</button>
+		<img class="icon"src="../images/icons/manageproduct.png">Manage Products</img>
+		<button class="open-button" onclick="openForm()"><img class="icon"src="../images/icons/add.png"></img>Add Products</button>
 	</div>
 	<div class="form-popup" id="myForm">
 			<form  class="form-container" action="../php_action/processproduct" method="POST" enctype="multipart/form-data">
@@ -96,19 +93,10 @@ function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
 </script>
+<div class="mytable">
 	<table>
-		<thead>
-			<tr>
-				<th style="width:10%;">Photo</th>
-				<th>Product Name</th>
-				<th>Rate</th>
-				<th>Quantity</th>
-				<th>Brand</th>
-				<th>Category</th>
-				<th>Status</th>
-				<th>Options</th>
-			</tr>
-		</thead>
+	<?php require "../php_action/fetchProduct.php";?>
 	</table>
+</div>
 </body>
 </html>
