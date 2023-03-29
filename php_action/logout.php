@@ -1,6 +1,6 @@
 <?php 
 
-include "db_connection.php";
+include "core.php";
 
 // removing all session variables
 session_unset(); 

@@ -21,7 +21,7 @@ if ($result->num_rows > 0) {
 	  }
 echo "</table>";
 } else {
-echo "Query failed";
+echo "No product Brand to display, add product brand";
 }
 $connect->close();
 //print_r($_POST);

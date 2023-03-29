@@ -51,4 +51,3 @@ $connect->close();
     	 </div>
    </body>
 </html>
-<?php require_once "../Footer_Header/footer.php"; ?>

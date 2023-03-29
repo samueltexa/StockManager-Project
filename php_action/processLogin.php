@@ -1,6 +1,8 @@
 <?php
 session_start();
-
+if(isset($_SESSION['user_id'])) {
+	header('location: http://localhost/stock/dashboard.php');	
+}
 if (isset($_POST['username']) && isset($_POST['password'])) {
     // including database connection
     require_once '../php_action/db_connection.php';

@@ -4,6 +4,8 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../sourcefolder/css/dashboard.css">
+	<script src="../sourcefolder/javascript/scripts.js" defer></script>
+			
 </head>
 <body>
 	<div class="home">
@@ -29,15 +31,15 @@
 			</div>
 	        <div class="form-group">
 	        	<label for="productName" >Product Name: </label>
-				<input type="text" placeholder="Product Name" name="productName" autocomplete="off" required>
+				<input class="text" type="text" placeholder="Product Name" name="productName" autocomplete="off" required>
 	        </div>
 	        <div class="form-group">
 	        	<label for="quantity">Quantity: </label>
-				<input type="text"  placeholder="Quantity" name="quantity" autocomplete="off" required>
+				<input class="text" type="text"  placeholder="Quantity" name="quantity" autocomplete="off" required>
 	        </div>
 	        <div class="form-group">
 	        	<label for="rate">Rate: </label>
-				<input type="text" placeholder="Rate" name="rate" autocomplete="off" required>
+				<input class="text" type="text" placeholder="Rate" name="rate" autocomplete="off" required>
 			</div>
 	        <div class="form-group">
 	        	<label for="brandName">Brand Name: </label>
@@ -85,14 +87,6 @@
 			</div>
      	</form> 
 	</div> 
-	<script>
-function openForm() {
-  document.getElementById("myForm").style.display = "block";
-}
-function closeForm() {
-  document.getElementById("myForm").style.display = "none";
-}
-</script>
 <div class="mytable">
 	<table>
 	<?php require "../php_action/fetchProduct.php";?>

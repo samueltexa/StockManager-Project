@@ -35,7 +35,7 @@ border-radius: 10px;
 .header a{
   text-decoration: none;
   padding: 19px 30px;
-  color: white;
+  color: black;
   font-size: 15px;
   border-radius: 15px;
 }
@@ -133,7 +133,7 @@ font-family: Arial;
   display: none;
   border: 3px solid black;
 }
-input[type="text"]{
+.text{
   display: block;
   margin: 1%;
 }
@@ -195,7 +195,6 @@ table th:nth-child(2) {
 .available {
   color: green;
 }
-
 .unavailable {
   color: red;
 }
@@ -207,5 +206,54 @@ table th:nth-child(2) {
   color: white;
   padding: 2%;;
 }
-
-
+.orders{
+  margin: 20%;;
+  text-align: center;
+  font-size: 150%;
+  color: blue;
+}
+/* styling for settings body */
+.settings{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color:  rgb(95, 88, 88);
+}
+.settings_form{
+  padding: 5%;
+  margin-top: 1%;
+  background-color: grey;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+.settings_title{
+  font-size: 200%;
+  margin-bottom: 10%;
+  color: blue;
+}
+.usertext{
+  display: flex;
+  font-size: 150%;
+  color: blue;
+}
+#usertext{
+  display: block;
+  font-size: 150%;
+  border-radius: 10px;
+}
+.passwordtext{
+  display: flex;
+  font-size: 150%;
+  color: blue;
+}
+#passwordtext{
+  display: block;
+  font-size: 150%;
+  border-radius: 10px;
+}
+.savechanges{
+  color: green;
+  margin-top: 5%;
+  border-radius: 10px;
+  font-size: 100%;
+}

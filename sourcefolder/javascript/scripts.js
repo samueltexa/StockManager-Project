@@ -46,3 +46,11 @@ form.addEventListener('submit', e => {
         e.preventDefault(); // prevent form submission
     }
 });
+// add product form pop up
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
+

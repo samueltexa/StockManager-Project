@@ -86,3 +86,20 @@ CREATE TABLE location(
    LocationID INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT UNIQUE,
    Locations VARCHAR(45) NOT NULL UNIQUE
    )ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- Dumping data for table `locations`
+
+INSERT INTO location(LocationID, Locations) VALUES
+(1, 'Arua'),
+(2, 'Gulu'),
+(3, 'Hoima'),
+(4, 'Jinja'),
+(5, 'Kabale'),
+(6, 'Kamapala'),
+(7, 'Masaka'),
+(8, 'Masindi'),
+(9, 'Mbale'),
+(10, 'Mbarara'),
+(11, 'Mukono'),
+(12, 'Sororti'),
+(13, 'Wakiso');

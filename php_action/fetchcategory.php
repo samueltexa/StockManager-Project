@@ -21,7 +21,7 @@ if ($result->num_rows > 0) {
 	  }
 echo "</table>";
 } else {
-echo "Query failed";
+echo "No product Category to display, add product category";
 }
 $connect->close();
 //print_r($_POST);

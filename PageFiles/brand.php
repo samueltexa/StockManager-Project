@@ -1,4 +1,3 @@
-<?php require_once '../php_action/db_connection.php' ?>
 <?php require_once "../Footer_Header/topheaders.php"; ?>
 <!DOCTYPE html>
 <head>

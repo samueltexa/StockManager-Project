@@ -17,6 +17,7 @@
 			<li><a href="product.php">PRODUCT</a></li>
        		<li><a href="orders.php?o=add">ADD ORDERS</a></li>
       		<li><a href="report.php">REPORT</a></li>
+			  <li><a href="../php_action/settings.php">SETTINGS</a></li>
       		<li><a href="../php_action/logout.php">LOGOUT</a></li>
 		</ul>
   </div>

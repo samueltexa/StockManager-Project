@@ -41,6 +41,6 @@ if ($result->num_rows > 0) {
             }
     echo "</table>";
 } else {
-    echo "Query failed";
+    echo "There is currently no products to display, add new products";
 }
 $connect->close();
