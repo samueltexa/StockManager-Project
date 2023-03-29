@@ -2,8 +2,8 @@
 <html>
   <head>
     <title>Register</title>
-    <link rel="stylesheet" href="../custom/css/custom.css">
-    <script src="../custom/js/custom.js" defer></script>
+    <link rel="stylesheet" href="../sourcefolder/css/custom.css">
+    <script src="../sourcefolder/js/custom.js" defer></script>
   </head>
   <body>
     <meta name="viewport"

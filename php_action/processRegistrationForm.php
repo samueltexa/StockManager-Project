@@ -32,7 +32,7 @@ include "db_connection.php";
      $stmt = $connect->prepare("INSERT INTO login(UserName, Password) VALUES(?, ?)");
      $stmt->bind_param("ss",$username, $password);
      $stmt->execute();
-     header("location:../PageFiles/registrationsuccess.php");
+     header('location: http://localhost/StockManager/PageFiles/registrationsuccess.php');
      $stmt->close();
      $connect->close();
    }

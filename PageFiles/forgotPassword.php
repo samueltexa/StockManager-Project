@@ -2,7 +2,7 @@
 <html>
 	<head>
 	<title>Forgot your password</title>
-		<link rel="stylesheet" href="./custom/custom.css">
+		<link rel="stylesheet" href="./sourcefolder/custom.css">
 		<script src="custom/custom.js"></script>
 	</head>
 	<body>

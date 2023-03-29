@@ -16,17 +16,11 @@ input[type="submit"]{
 .labels{
   display: block;
   box-sizing: border-box;
-  color: white;
 }
 .btnlogin{
   background-color: blue;
   color: white;
   border: non;
-}
-.canva{
-  border: 2px solid black;
-  margin-bottom: 3%;
-  box-sizing: border-box;
 }
 .Forms{
   background-color: cyan;
@@ -47,7 +41,7 @@ body{
 .account_display{
   color: blue;
   display: flex;
-  margin-bottom: 5%;
+  margin-bottom: 15%;
   justify-content: center;
   box-sizing: border-box;
 }
@@ -72,8 +66,8 @@ body{
 .alreadyHave_Account{
   margin-left: 15%;
   margin-bottom: 10%;
-  margin: : 10%;
-  box-sizing: border-box;
+  margin:  10%;
+  box-sizing : border-box;
 }
 #register-1{
   background-color: blue;
@@ -109,6 +103,6 @@ input[type="email"]{
   box-sizing: border-box;
   margin-bottom: 5%;
 }
-.do{
-
+.error{
+  color: red;
 }

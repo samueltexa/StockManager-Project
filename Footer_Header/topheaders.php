@@ -29,8 +29,8 @@
 				<i class="fa fa-caret-down"></i>
 			</button>
 			<div class="dropdown-content">
-        		<a href="setting.php">SETTINGS</a>
-        		<a href="logout.php">LOGOUT</a>
+        		<a href="../php_action/settings.php">SETTINGS</a>
+        		<a href="../php_action/logout.php">LOGOUT</a>
 			</div>
 		</div>
 		<div class="drop">

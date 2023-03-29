@@ -177,7 +177,7 @@ font-family: Arial;
   background-color: rgb(226, 209, 209);
   padding: 10px;
   border-radius: 10px;
-  font-size: 150%;
+  font-size: 100%;
   color: black;
 }
 .manageproduct .icon{
@@ -190,7 +190,7 @@ font-family: Arial;
   border: none;
   cursor: pointer;
   border-radius: 5px;
-  font-size: 120%;
+  font-size: inherit;
 }
 .default_image{
   width: 40%;

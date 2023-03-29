@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Registration successful</title>
-  <link rel="stylesheet" href="../custom/custom.css">
+  <link rel="stylesheet" href="../sourcefolder/custom.css">
 </head>
 <body>
   <div>
